@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="https://kit.fontawesome.com/2c0e277225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navBar.css" type="text/css" media="all" />
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navObject">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        
+         <div class="navObject">
+            <i class="fas fa-project-diagram"></i>
+             <span>Project</span>
+         </div>
+         
+          <div class="navObject">
+             <i class="fas fa-hands-helping"></i>
+              <span>Support</span>
+          </div>
+          
+           <div class="navObject">
+             <i class="fas fa-id-badge"></i>
+               <span>Profile</span>
+           </div>
+           
+            <div class="navObject">
+               <i class="fas fa-question-circle"></i>
+                <span>Query</span>
+            </div>
+            <div class="btn">
+                <button type="" onclick="navOpen()"><i class="fas fa-angle-right"></i></button>
+            </div>
+    </div>
+    
+    
+    <script>
+        function navOpen(){
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
